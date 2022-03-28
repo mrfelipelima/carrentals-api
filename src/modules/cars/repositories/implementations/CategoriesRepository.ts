@@ -7,14 +7,15 @@ import {
 class CategoryRepositories implements ICategoriesRepository {
   private categories: Category[];
 
+  // eslint-disable-next-line no-use-before-define
   private static INSTANCE: CategoryRepositories;
 
   private constructor() {
     this.categories = [];
   }
-  
+
   public static getInstance(): CategoryRepositories {
-    if(!CategoryRepositories.INSTANCE) {
+    if (!CategoryRepositories.INSTANCE) {
       CategoryRepositories.INSTANCE = new CategoryRepositories();
     }
 
