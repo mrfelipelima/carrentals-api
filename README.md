@@ -1,12 +1,12 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Modulo02" />
+  <img src="./.github/app.gif" alt="Car Rental API" />
 
   &#xa0;
 
   <!-- <a href="https://modulo02.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Modulo02</h1>
+<h1 align="center">Car Rental API</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/mrfelipelima/modulo02?color=56BEB8">
@@ -26,11 +26,11 @@
 
 <!-- Status -->
 
-<!-- <h4 align="center"> 
-	🚧  Modulo02 🚀 Under construction...  🚧
+<h4 align="center"> 
+	🚧  Car Rental API is 🚀 Under construction...  🚧
 </h4> 
 
-<hr> -->
+<hr>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -46,7 +46,7 @@
 
 ## :dart: About ##
 
-Describe your project
+This project is in development fase.
 
 ## :sparkles: Features ##
 
@@ -58,10 +58,7 @@ Describe your project
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
 - [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## :white_check_mark: Requirements ##
@@ -75,7 +72,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 $ git clone https://github.com/mrfelipelima/modulo02
 
 # Access
-$ cd modulo02
+$ cd carrentals-api
 
 # Install dependencies
 $ yarn
