@@ -3,6 +3,12 @@
 For this project will be used the following commit pattern:
 
     <type>[optional scope]: <description>
+<<<<<<< HEAD
+=======
+    [optional body]
+    [optional footer]
+
+>>>>>>> 34d4953cfb7cdef0ae8238e9de280e6f401e9173
 ## The structure
 
 ### Commit types `<types>`
@@ -10,6 +16,7 @@ For this project will be used the following commit pattern:
 - `refactor`: Use this type to commit all changes in code structure
 - `chapter`: This commit type will be used to send last updates when a chapter of the Ignite course is done.
 - `feat`: Feat used to commit all new features added in the apllication.
+<<<<<<< HEAD
 - `docs`: All update in documentation, readme or Swagger module must be commited in this type.
 
 ### Scope `[optional scope]`
@@ -20,3 +27,6 @@ In case of new implementations or big changes that affects many modules of the a
 ### Description `<description>`
 
 Describe the changes included in the commit.
+=======
+- `docs`: All update in documentation, readme or Swagger module must be commited in this type.
+>>>>>>> 34d4953cfb7cdef0ae8238e9de280e6f401e9173
