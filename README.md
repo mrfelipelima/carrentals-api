@@ -1,27 +1,27 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Car Rental API" />
+  <img src="./.github/app.gif" alt="RENTX - Car Rental API" />
 
   &#xa0;
 
   <!-- <a href="https://modulo02.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Car Rental API</h1>
+<h1 align="center">RENTX - Car Rental API</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/mrfelipelima/modulo02?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/mrfelipelima/rentx-api?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/mrfelipelima/modulo02?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/mrfelipelima/rentx-api?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/mrfelipelima/modulo02?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/mrfelipelima/rentx-api?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/mrfelipelima/modulo02?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/mrfelipelima/rentx-api?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/mrfelipelima/modulo02?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/mrfelipelima/rentx-api?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/mrfelipelima/modulo02?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/mrfelipelima/rentx-api?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/mrfelipelima/modulo02?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/mrfelipelima/rentx-api?color=56BEB8" /> -->
 </p>
 
 <!-- Status -->
@@ -69,10 +69,10 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone https://github.com/mrfelipelima/modulo02
+$ git clone https://github.com/mrfelipelima/rentx-api
 
 # Access
-$ cd carrentals-api
+$ cd rentx-api
 
 # Install dependencies
 $ yarn
