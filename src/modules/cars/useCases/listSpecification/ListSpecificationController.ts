@@ -3,10 +3,10 @@ import { Request, Response } from "express";
 import { ListSpecificationUseCase } from "./ListSpecificationUseCase";
 
 class ListSpecificationController {
-  constructor(private listSpecificationuseCase: ListSpecificationUseCase) {}
+  constructor(private listSpecificationUseCase: ListSpecificationUseCase) {}
 
   handle(request: Request, response: Response): Response {
-    const all = this.listSpecificationuseCase.execute();
+    const all = this.listSpecificationUseCase.execute();
     return response.json(all);
   }
 }
