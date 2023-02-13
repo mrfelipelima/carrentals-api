@@ -4,14 +4,28 @@
     "title": "RentX Documentation",
     "description": "This is an API for Rent Cars",
     "version": "1.0.0",
+    "termsOfService": "https://felipelima.net/",
     "contact": {
+      "name": "Felipe Lima",
+      "url": "https://felipelima.net/",
       "email": "mrfelipelima@gmail.com"
+    },
+    "license": {
+      "name":"MIT",
+      "url": "https://opensource.org/licenses/MIT"
     }
   },
+  "servers": [
+    {
+      "url": "http://localhost:3333",
+      "description": "Local developement server"
+    }
+  ],
   "paths": {
     "/categories": {
       "post": {
         "tags": ["Category"],
+        "operationId": "createACategory",
         "summary": "Create a category",
         "description": "Create a new category",
         "requestBody": {
@@ -46,6 +60,7 @@
       },
       "get": {
         "tags": ["Category"],
+        "operationId": "getAllCategories",
         "summary": "List all categories",
         "description": "List all categories",
         "responses": {
@@ -82,6 +97,7 @@
     "/categories/import": {
       "post": {
         "tags": ["Category"],
+        "operationId": "importACategory",
         "summary": "Import categories",
         "description": "Import categories from a csv file",
         "requestBody": {
@@ -109,13 +125,22 @@
     "/specifications": {
       "post": {
         "tags": ["Specifications"],
+        "operationId": "createASpecification",
         "summary": "Create specifications",
         "description": "Create a new specification",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/definitions/Specification"
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -127,19 +152,6 @@
           "500": {
             "description": "Specifications Already Exists"
           }
-        }
-      }
-    }
-  },
-  "definitions": {
-    "Specification": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
         }
       }
     }
