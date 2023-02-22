@@ -1,7 +1,7 @@
 _id: spc_82230f66e264411884f60ba3f4e5dfea
 type: ApiSpec
 parentId: wrk_7c306e2778014122a9887bc5c3b2ee9d
-modified: 1677084481304
+modified: 1677085080286
 created: 1676134041696
 fileName: rentx-api
 contents: |-
@@ -9,7 +9,7 @@ contents: |-
     "openapi": "3.0.0",
     "info": {
       "title": "RentX Documentation",
-      "description": "This is an API for Rent Cars",
+      "description": "This is an API for Rent Cars created with Ignite course",
       "version": "1.0.0",
       "termsOfService": "https://felipelima.net/",
       "contact": {
