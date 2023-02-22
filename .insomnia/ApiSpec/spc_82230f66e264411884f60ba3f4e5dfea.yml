@@ -1,0 +1,167 @@
+_id: spc_82230f66e264411884f60ba3f4e5dfea
+type: ApiSpec
+parentId: wrk_7c306e2778014122a9887bc5c3b2ee9d
+modified: 1677084481304
+created: 1676134041696
+fileName: rentx-api
+contents: |-
+  {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "RentX Documentation",
+      "description": "This is an API for Rent Cars",
+      "version": "1.0.0",
+      "termsOfService": "https://felipelima.net/",
+      "contact": {
+        "name": "Felipe Lima",
+        "url": "https://felipelima.net/",
+        "email": "mrfelipelima@gmail.com"
+      },
+      "license": {
+        "name":"MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3333",
+        "description": "Local developement server"
+      }
+    ],
+    "paths": {
+      "/categories": {
+        "post": {
+          "tags": ["Category"],
+          "operationId": "createACategory",
+          "summary": "Create a category",
+          "description": "Create a new category",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  },
+                  "example": {
+                    "name": "category name sample",
+                    "description": "category description sample"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Created"
+            },
+            "500": {
+              "description": "Category already exists"
+            }
+          }
+        },
+        "get": {
+          "tags": ["Category"],
+          "operationId": "getAllCategories",
+          "summary": "List all categories",
+          "description": "List all categories",
+          "responses": {
+            "200": {
+              "description": "Success",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type":"string"
+                        },
+                        "description": {
+                          "type": "string"
+                        },
+                        "createdAt": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/categories/import": {
+        "post": {
+          "tags": ["Category"],
+          "operationId": "importACategory",
+          "summary": "Import categories",
+          "description": "Import categories from a csv file",
+          "requestBody": {
+            "content": {
+              "multipart/form-data": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "file": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Created"
+            }
+          }
+        }
+      },
+      "/specifications": {
+        "post": {
+          "tags": ["Specifications"],
+          "operationId": "createASpecification",
+          "summary": "Create specifications",
+          "description": "Create a new specification",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Created"
+            },
+            "500": {
+              "description": "Specifications Already Exists"
+            }
+          }
+        }
+      }
+    }
+  }
+contentType: yaml

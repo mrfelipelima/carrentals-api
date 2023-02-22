@@ -1,0 +1,29 @@
+_id: req_wrk_7c306e2778014122a9887bc5c3b2ee9d2c6f7156
+type: Request
+parentId: fld_9732dbda08c94b37a8143329e4d45bcb
+modified: 1677084535312
+created: 1677084481298
+url: "{{ base_url }}/categories"
+name: Create a category
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "name": "category name sample",
+      "description": "category description sample"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1676133211279.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

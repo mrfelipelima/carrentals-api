@@ -1,0 +1,22 @@
+_id: req_wrk_7c306e2778014122a9887bc5c3b2ee9d536aa8c1
+type: Request
+parentId: fld_9732dbda08c94b37a8143329e4d45bcb
+modified: 1677084547580
+created: 1677084481296
+url: "{{ base_url }}/categories/import"
+name: Import categories
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1676133211229.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

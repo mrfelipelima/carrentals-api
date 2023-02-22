@@ -1,0 +1,29 @@
+_id: req_wrk_7c306e2778014122a9887bc5c3b2ee9df7c27a2e
+type: Request
+parentId: fld_7e3daaf6cbe04ee59e95251cfdd4e661
+modified: 1677084542771
+created: 1677084481295
+url: "{{ base_url }}/specifications"
+name: Create specifications
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "name": "string",
+      "description": "string"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1677084481295
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

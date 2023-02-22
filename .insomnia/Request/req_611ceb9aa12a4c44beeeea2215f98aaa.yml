@@ -1,0 +1,31 @@
+_id: req_611ceb9aa12a4c44beeeea2215f98aaa
+type: Request
+parentId: fld_1405c736b354498fa30a9c0ceb5bde85
+modified: 1677078025952
+created: 1677077790999
+url: "{{ _['base-url'] }}/users"
+name: Create user
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Felipe Lima",
+    	"email": "mrfelipelima@gmail.com",
+    	"password": "test123",
+    	"driver_license": "1236547899"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1677077790999
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
