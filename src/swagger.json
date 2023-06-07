@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "RentX Documentation",
-    "description": "This is an API for Rent Cars",
+    "description": "This is an API for Rent Cars created with Ignite course",
     "version": "1.0.0",
     "termsOfService": "https://felipelima.net/",
     "contact": {
@@ -20,6 +20,12 @@
       "url": "http://localhost:3333",
       "description": "Local developement server"
     }
+  ],
+  "tags": [
+    {"name": "Specifications"},
+    {"name": "Category"},
+    {"name": "Users"},
+    {"name": "Sessions"}
   ],
   "paths": {
     "/categories": {
@@ -151,6 +157,108 @@
           },
           "500": {
             "description": "Specifications Already Exists"
+          }
+        }
+      }
+    },
+    "/users": {
+      "post": {
+        "tags": ["Users"],
+        "operationId": "createUser",
+        "summary": "Create user",
+        "description": "Create a new user in application",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "driver_license": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "User already exists"
+          }
+        }
+      }
+    },
+    "/users/avatar": {
+      "patch": {
+        "tags": ["Users"],
+        "operationId": "uploadUserAvatar",
+        "summary": "Upload Avatar",
+        "description": "Upload and update user avatar",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": "No content"
+          }
+        }
+      }
+    },
+    "/sessions": {
+      "post" : {
+        "tags": ["Sessions"],
+        "operationId": "createNewSession",
+        "summary": "Generate JWT token",
+        "description": "Generate a JWT token for user authentication",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "password": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Ok"
+          },
+          "400": {
+            "description": "Email or password incorrect"
           }
         }
       }
